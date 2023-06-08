@@ -1,6 +1,5 @@
 import express from 'express';
 import ProductManager from './components/ProductManager.js';
-/* import { read } from 'fs'; */
 
 const app = express();
 app.use(express.urlencoded({extended:true}));
@@ -24,9 +23,9 @@ app.get('/products/:id', async (request, response) => {
     response.send(productById);
 });
 
-const PORT = 3000;
+const PORT = 8080;
 const server = app.listen(PORT, () => {
-    console.log("Localhost 3000AC up");
+    console.log("Localhost 8080 up");
 })
 server.on("error", (error) => {
     console.log(`Error al levantar el servidor ${error}`);

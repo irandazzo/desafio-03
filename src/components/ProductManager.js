@@ -2,7 +2,7 @@ import {promises as fs} from "fs"
 
 export default class ProductManager {
     constructor (){
-        this.path = "./productos.txt";
+        this.path = "./productos.json";
         this.products = [];
     }
 
@@ -71,9 +71,9 @@ productos.addProduct("producto6", "producto", 2300, "imagen6", "codigo6", 100);
 productos.addProduct("producto7", "producto", 2300, "imagen7", "codigo7", 100);
 productos.addProduct("producto8", "producto", 2300, "imagen8", "codigo8", 100);
 productos.addProduct("producto9", "producto", 2300, "imagen9", "codigo9", 100);
-productos.addProduct("producto10", "producto", 2300, "imagen10", "codigo10", 100); */
-
-// productos.getProducts();
+productos.addProduct("producto10", "producto", 2300, "imagen10", "codigo10", 100);
+ */
+/* productos.getProducts(); */
 
 /* Buscar productos x ID */
 /* productos.getProductById(5) */
